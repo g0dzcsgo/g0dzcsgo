@@ -23,19 +23,22 @@
 class AboutMe extends React.Component<{}, { name: string, gender: string, hobbies: string[], languages: string[] }> {
     state = {
         name: "Cool",
+        age: 21,
         gender: "Male",
         hobbies: ["Programming", "Photography", "Videography", "Swimming"],
-        languages: ["Swedish", "English", "German"]
+        languages: ["Swedish", "English", "German"],
+        from: "Sweden"
     };
 
     render() {
         return (
             <div>
                 <h1>About me</h1>
-                <p>Name: {this.state.name}</p>
-                <p>Gender: {this.state.gender}</p>
-                <p>Hobbies: {this.state.hobbies.join(", ")}</p>
-                <p>Languages I speak: {this.state.languages.join(", ")}</p>
+                <p>
+                    My name is {this.state.name} and I am a {this.state.age} years old {this.state.gender.toLowerCase()} coder from {this.state.from}.
+
+                    Some of my hobbies include {this.state.hobbies.join(", ")}, and I speak {this.state.languages.join(", ")}.
+                </p>
             </div>
         )
     }
