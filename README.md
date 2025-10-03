@@ -18,6 +18,7 @@
 ![MySQL](https://img.shields.io/badge/-MySQL-05122A?style=flat&logo=mysql)<br>
 ![Go](https://img.shields.io/badge/-Go-05122A?style=flat&logo=go)
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 
 ```typescript
 class AboutMe extends React.Component<{}, { name: string, gender: string, hobbies: string[], languages: string[] }> {
